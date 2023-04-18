@@ -1,0 +1,6 @@
+// Objetivo: Listar um relatório com as informações de cada campanha de mensagens enviadas em massa.</br>
+// Funcionalidade: A Aplicação inicia acionando uma aplicação Back em Java através de Javascipt e Ajax, com o objetivo de obter e manipular os dados necessário para transmitir as informações através de uma lista em json que é repassada de volta dentro de uma variável virtual(_v_OAMList_valuesJson) para a aplicação do front da tela através do callBack do Ajax, caso o json tenha alguma informação para ser listada, a aplicação prossegue com a criação da estrutura da página através do HTML que utiliza essas informações dentro do json; caso não tenha informações, ela simplesmente informa o usuário na tela que não possuem campanhas cadastradas. A estilizaçao e dinâmica da página é feita via CSS,JavaScript e JQuery.</br>
+// Para entendimento melhor de quem for debugar este código, como ja explicando no readme principal deste repositório, existem alguns processos como classes, métodos e variáveis virtuais que ja são tratadas pela engine do CRM, neste código foram usados os seguintes atributos pré-definidos:</br>
+
+- _json(variável que contém o json enviado no corpo da requisição)</br>
+- session.createSQLQuery(método que se conecta ao banco oracle através da classe java.sql.DriverManager)
